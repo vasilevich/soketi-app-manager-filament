@@ -193,14 +193,14 @@ class EditApplication extends EditRecord
                                     ->required()
                                     ->numeric()
                                     ->minValue(10)
-                                    ->maxValue(127)
+                                    ->maxValue(1000000)
                                     ->columnSpan(3),
                                 TextInput::make('max_event_payload_in_kb')
                                     ->label('Max event payload size in kb')
                                     ->required()
                                     ->numeric()
                                     ->minValue(10)
-                                    ->maxValue(127)
+                                    ->maxValue(1000000)
                                     ->columnSpan(3),
                             ]),
                     ])
