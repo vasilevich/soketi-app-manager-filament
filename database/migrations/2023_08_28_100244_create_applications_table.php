@@ -28,7 +28,7 @@ return new class extends Migration
             $table->tinyInteger('max_channel_name_length')->default(100);
             $table->tinyInteger('max_event_channels_at_once')->default(100);
             $table->tinyInteger('max_event_name_length')->default(100);
-            $table->tinyInteger('max_event_payload_in_kb')->default(100);
+            $table->integer('max_event_payload_in_kb')->default(10000);
             $table->tinyInteger('max_event_batch_size')->default(10);
             $table->boolean('enable_user_authentication')->default(false);
             $table->ownerships();
